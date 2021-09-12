@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+@tailwind components;
+
+@layer components {
+	.text-shadow {
+		text-shadow: 1px 1px 2px #fff, 0 0 1em #1df3f4, 0 0 0.2em #1df3f4,
+			0 0 0.4em #1df3f4;
+	}
+}
