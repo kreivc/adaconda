@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { HiArrowDown } from "react-icons/hi";
 import { Link } from "react-scroll";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import HeroLogo from "../assets/Adaconda.png";
+import HeroLogo from "../assets/Anaconda_flipped.png";
 import Image from "next/image";
 
 export default function Hero() {
@@ -20,7 +20,7 @@ export default function Hero() {
 					alt="adaconda"
 					width="300px"
 					height="300px"
-					className="transform scale-x-[-1]"
+					// className="transform scale-x-[-1]"
 				/>
 				<h1
 					className="text-5xl font-extrabold leading-10 tracking-tight text-left text-white md:text-left sm:leading-none md:text-6xl lg:text-7xl"
