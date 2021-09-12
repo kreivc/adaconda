@@ -20,7 +20,7 @@ import Image from "next/image";
 import { Link } from "react-scroll";
 
 export default function Header() {
-	const { toggleColorMode: toggleMode } = useColorMode();
+	// const { toggleColorMode: toggleMode } = useColorMode();
 	const text = useColorModeValue("dark", "light");
 	const SwitchIcon = useColorModeValue(FaMoon, FaSun);
 	const bg = useColorModeValue("white", "gray.800");
@@ -50,20 +50,49 @@ export default function Header() {
 			spacing={3}
 			rounded="sm"
 			shadow="sm"
+			zIndex={99}
 		>
 			<CloseButton
 				aria-label="Close menu"
 				justifySelf="self-start"
 				onClick={mobileNav.onClose}
 			/>
-			<Button w="full" variant="ghost" leftIcon={<AiFillHome />}>
-				Dashboard
-			</Button>
-			<Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
-				About
-			</Button>
-			<Button w="full" variant="ghost" leftIcon={<BsFillCameraVideoFill />}>
-				Videos
+			<Link to="about" smooth={true} duration={500} spy={true} exact="true">
+				<Button w="full" variant="ghost" onClick={mobileNav.onClose}>
+					About
+				</Button>
+			</Link>
+			<Link
+				to="tokenomics"
+				smooth={true}
+				duration={500}
+				spy={true}
+				exact="true"
+			>
+				<Button w="full" variant="ghost" onClick={mobileNav.onClose}>
+					Tokenomics
+				</Button>
+			</Link>
+			<Link to="timeline" smooth={true} duration={500} spy={true} exact="true">
+				<Button w="full" variant="ghost" onClick={mobileNav.onClose}>
+					Timeline
+				</Button>
+			</Link>
+			<Link to="howtobuy" smooth={true} duration={500} spy={true} exact="true">
+				<Button w="full" variant="ghost" onClick={mobileNav.onClose}>
+					How To Buy
+				</Button>
+			</Link>
+			<Button
+				as="a"
+				href="https://pancakeswap.finance/"
+				target="_blank"
+				w="full"
+				variant="ghost"
+				bg="#3bc98d"
+				onClick={mobileNav.onClose}
+			>
+				Buy On Pancake
 			</Button>
 		</VStack>
 	);
@@ -76,7 +105,7 @@ export default function Header() {
 				transition="box-shadow 0.2s"
 				bg={bg}
 				borderTop="6px solid"
-				borderTopColor="teal"
+				borderTopColor="#3bc98d"
 				w="full"
 				overflowY="hidden"
 				borderBottomWidth={2}
@@ -91,14 +120,7 @@ export default function Header() {
 						justifyContent="space-between"
 					>
 						<Flex align="flex-start">
-							<Link
-								to="about"
-								smooth={true}
-								duration={500}
-								spy={true}
-								exact="true"
-								offset={-80}
-							>
+							<Link to="/" smooth={true} duration={500} spy={true} exact="true">
 								<HStack>
 									{/* <Image
 										src={Logo}
@@ -120,46 +142,89 @@ export default function Header() {
 						</Flex>
 						<Flex>
 							<HStack spacing="5" display={{ base: "none", md: "flex" }}>
-								<Button
-									bg={bg}
-									color="gray.500"
-									display="inline-flex"
-									alignItems="center"
-									fontSize="md"
-									_hover={{ color: cl }}
-									_focus={{ boxShadow: "none" }}
+								<Link
+									to="about"
+									smooth={true}
+									duration={500}
+									spy={true}
+									exact="true"
 								>
-									About
-								</Button>
-								<Button
-									bg={bg}
-									color="gray.500"
-									display="inline-flex"
-									alignItems="center"
-									fontSize="md"
-									_hover={{ color: cl }}
-									_focus={{ boxShadow: "none" }}
+									<Button
+										bg={bg}
+										color="gray.500"
+										display="inline-flex"
+										alignItems="center"
+										fontSize="md"
+										_hover={{ color: cl }}
+										_focus={{ boxShadow: "none" }}
+									>
+										About
+									</Button>
+								</Link>
+								<Link
+									to="tokenomics"
+									smooth={true}
+									duration={500}
+									spy={true}
+									exact="true"
 								>
-									Blog
-								</Button>
-								<Button
-									bg={bg}
-									color="gray.500"
-									display="inline-flex"
-									alignItems="center"
-									fontSize="md"
-									_hover={{ color: cl }}
-									_focus={{ boxShadow: "none" }}
+									<Button
+										bg={bg}
+										color="gray.500"
+										display="inline-flex"
+										alignItems="center"
+										fontSize="md"
+										_hover={{ color: cl }}
+										_focus={{ boxShadow: "none" }}
+									>
+										Tokenomics
+									</Button>
+								</Link>
+								<Link
+									to="timeline"
+									smooth={true}
+									duration={500}
+									spy={true}
+									exact="true"
 								>
-									Pricing
-								</Button>
+									<Button
+										bg={bg}
+										color="gray.500"
+										display="inline-flex"
+										alignItems="center"
+										fontSize="md"
+										_hover={{ color: cl }}
+										_focus={{ boxShadow: "none" }}
+									>
+										Timeline
+									</Button>
+								</Link>
+								<Link
+									to="hotobuy"
+									smooth={true}
+									duration={500}
+									spy={true}
+									exact="true"
+								>
+									<Button
+										bg={bg}
+										color="gray.500"
+										display="inline-flex"
+										alignItems="center"
+										fontSize="md"
+										_hover={{ color: cl }}
+										_focus={{ boxShadow: "none" }}
+									>
+										How To Buy
+									</Button>
+								</Link>
 							</HStack>
 						</Flex>
 						<Flex justify="flex-end" align="center" color="gray.400">
 							<HStack spacing="5" display={{ base: "none", md: "flex" }}>
 								<Button
 									colorScheme="brand"
-									bg="teal"
+									bg="#3bc98d"
 									variant="solid"
 									size="sm"
 									color="white"

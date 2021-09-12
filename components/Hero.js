@@ -10,10 +10,21 @@ export default function Hero() {
 
 	return (
 		<div
-			className="container max-w-lg px-4 pt-20 pb-32 mx-auto text-left md:max-w-none md:text-center"
+			className="relative container max-w-lg px-4 pt-20 pb-32 mx-auto text-left md:max-w-none md:text-center"
 			id="home"
 			data-aos="fade-up"
 		>
+			<div className="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden">
+				<video
+					className="w-full h-full object-cover"
+					playsInline
+					autoPlay
+					loop
+					muted
+				>
+					<source src="./Video.mp4" type="video/mp4" />
+				</video>
+			</div>
 			<div className="flex flex-wrap relative w-full items-center flex-row mx-auto justify-center space-x-0 md:space-x-10">
 				<Image
 					src={HeroLogo}
@@ -28,15 +39,15 @@ export default function Hero() {
 				>
 					<span className="inline md:block">Adaconda</span>
 					<span className="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-[#01bf71] to-[#46e4a2] md:inline-block">
-						Big Dino For <br /> <span className="text-[#293cc7]">ADA</span>{" "}
+						Big Snake For <br /> <span className="text-[#293cc7]">ADA</span>{" "}
 						Holders
 					</span>
 				</h1>
 			</div>
-			<div className="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg">
+			{/* <div className="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
 				molestiae praesentium nihil ullam ad?
-			</div>
+			</div> */}
 			<div className="flex flex-col items-center mt-12 text-center">
 				<span className="relative inline-flex w-full md:w-auto">
 					<CopyToClipboard text="0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx">
