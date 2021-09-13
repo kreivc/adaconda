@@ -9,21 +9,15 @@ import {
 	CloseButton,
 	VStack,
 	Button,
-	useColorMode,
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
-import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
-import { BsFillCameraVideoFill } from "react-icons/bs";
+import { AiOutlineMenu } from "react-icons/ai";
 import { FaMoon, FaSun } from "react-icons/fa";
-import Logo from "../assets/Adaconda.png";
+import Logo from "../assets/Adacon_text.png";
 import Image from "next/image";
 import { Link } from "react-scroll";
 
 export default function Header() {
-	// const { toggleColorMode: toggleMode } = useColorMode();
-	const text = useColorModeValue("dark", "light");
-	const SwitchIcon = useColorModeValue(FaMoon, FaSun);
-	const bg = useColorModeValue("white", "gray.800");
 	const ref = React.useRef();
 	const [y, setY] = React.useState(0);
 	const { height = 0 } = ref.current ? ref.current.getBoundingClientRect() : {};
@@ -46,7 +40,7 @@ export default function Header() {
 			p={2}
 			pb={4}
 			m={2}
-			bg={bg}
+			bg={"black"}
 			spacing={3}
 			rounded="sm"
 			shadow="sm"
@@ -103,7 +97,7 @@ export default function Header() {
 				ref={ref}
 				shadow={y > height ? "sm" : undefined}
 				transition="box-shadow 0.2s"
-				bg={bg}
+				bg={"black"}
 				borderTop="6px solid"
 				borderTopColor="#3bc98d"
 				w="full"
@@ -122,21 +116,13 @@ export default function Header() {
 						<Flex align="flex-start">
 							<Link to="/" smooth={true} duration={500} spy={true} exact="true">
 								<HStack>
-									{/* <Image
+									<Image
 										src={Logo}
 										alt="logo_adaconda"
-										width="50"
+										width="140"
 										height="50"
-									/> */}
-									<chakra.h1
-										className="text-shadow"
-										as="button"
-										color="white"
-										fontWeight="bold"
-										fontSize="20px"
-									>
-										Adaconda
-									</chakra.h1>
+										objectFit="cover"
+									/>
 								</HStack>
 							</Link>
 						</Flex>
@@ -150,7 +136,7 @@ export default function Header() {
 									exact="true"
 								>
 									<Button
-										bg={bg}
+										bg={"black"}
 										color="gray.500"
 										display="inline-flex"
 										alignItems="center"
@@ -169,7 +155,7 @@ export default function Header() {
 									exact="true"
 								>
 									<Button
-										bg={bg}
+										bg={"black"}
 										color="gray.500"
 										display="inline-flex"
 										alignItems="center"
@@ -188,7 +174,7 @@ export default function Header() {
 									exact="true"
 								>
 									<Button
-										bg={bg}
+										bg={"black"}
 										color="gray.500"
 										display="inline-flex"
 										alignItems="center"
@@ -200,14 +186,14 @@ export default function Header() {
 									</Button>
 								</Link>
 								<Link
-									to="hotobuy"
+									to="howtobuy"
 									smooth={true}
 									duration={500}
 									spy={true}
 									exact="true"
 								>
 									<Button
-										bg={bg}
+										bg={"black"}
 										color="gray.500"
 										display="inline-flex"
 										alignItems="center"
@@ -223,25 +209,19 @@ export default function Header() {
 						<Flex justify="flex-end" align="center" color="gray.400">
 							<HStack spacing="5" display={{ base: "none", md: "flex" }}>
 								<Button
+									as="a"
+									href="https://pancakeswap.finance/"
+									target="_blank"
 									colorScheme="brand"
 									bg="#3bc98d"
 									variant="solid"
-									size="sm"
+									// size="sm"
+									fontSize="medium"
 									color="white"
 								>
 									Buy On Pancake
 								</Button>
 							</HStack>
-							{/* <IconButton
-								size="md"
-								fontSize="lg"
-								aria-label={`Switch to ${text} mode`}
-								variant="ghost"
-								color="current"
-								ml={{ base: "0", md: "3" }}
-								onClick={toggleMode}
-								icon={<SwitchIcon />}
-							/> */}
 							<IconButton
 								display={{ base: "flex", md: "none" }}
 								aria-label="Open menu"
