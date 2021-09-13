@@ -22,14 +22,16 @@ export default function GridListWithHeading() {
 					maxW={"3xl"}
 					textAlign={"center"}
 					data-aos="slide-up"
+					pb="6"
 				>
 					<Heading fontSize={"4xl"} color="#3bc98d">
 						Timeline For Adaconda Project
 					</Heading>
 					<Text color={"gray.400"} fontSize={"xl"}>
-						We always think about the steps that need to be taken in the future,
-						Also we will always update every completed task on the website
-						regularly
+						We are constantly thinking about the steps that need to be taken in
+						the future. As a community token, we are depending on the holders to
+						share their ideas with the team. The website will be updated after
+						each step.
 					</Text>
 				</Stack>
 

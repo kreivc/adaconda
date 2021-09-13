@@ -16,7 +16,7 @@
 	top: 0;
 	left: 0;
 	z-index: -2;
-	background-image: url(https://marcbruederlin.github.io/particles.js/img/background.jpg);
+	background-image: url("../assets//background2.jpg");
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-color: black;

@@ -72,9 +72,8 @@ export default function SplitWithImage() {
 					<Stack spacing={4} data-aos="fade-right">
 						<Heading color="#01bf71">How About Tokenomics?</Heading>
 						<Text color={"gray.500"} fontSize={"lg"}>
-							We know everyone wants to make a profits, so we create best
-							tokenomics for holders so that all holders can get the maximum
-							profits.
+							We know everyone wants to make a profit, so we created the best
+							tokenomics. This way holders can get the maximum out of it.
 						</Text>
 						<Stack
 							spacing={4}

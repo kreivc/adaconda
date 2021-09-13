@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import HeroLogo from "../assets/Anaconda_flipped.png";
 import Image from "next/image";
-import ParticleBackground from "./ParticleBg";
 
 export default function Hero() {
 	const [copied, setCopied] = useState(false);
@@ -21,10 +20,10 @@ export default function Hero() {
 					className="text-5xl font-extrabold leading-10 tracking-tight text-left text-white md:text-left sm:leading-none md:text-6xl lg:text-7xl"
 					data-aos="fade-up"
 				>
-					<span className="inline md:block">Adaconda</span>
+					<span className="inline md:block">Adaconda,</span>
 					<span className="relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-[#3bc98d] to-[#46e4a2] md:inline-block">
-						Big Snake For <br /> <span className="text-[#293cc7]">ADA</span>{" "}
-						Holders
+						The only snake <br />{" "}
+						<span className="text-[#233dffe3]">You can trust</span>
 					</span>
 				</h1>
 			</div>

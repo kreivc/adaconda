@@ -10,7 +10,7 @@ export default function Metamask() {
 		<>
 			<Tippy content="Add to Metamask">
 				<button
-					disabled="true"
+					disabled={true}
 					onClick={async () => {
 						const provider = window.web3.currentProvider;
 						provider.sendAsync(
