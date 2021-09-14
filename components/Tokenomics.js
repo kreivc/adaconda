@@ -114,7 +114,7 @@ export default function SplitWithImage() {
 									<Icon as={CgEditBlackPoint} color={"red.500"} w={5} h={5} />
 								}
 								iconBg={useColorModeValue("red.100", "red.900")}
-								text={"4% Liquidity Points"}
+								text={"4% Liquidity Provider"}
 							/>
 						</Stack>
 					</Stack>
