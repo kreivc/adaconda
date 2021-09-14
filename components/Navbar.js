@@ -12,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import { useViewportScroll } from "framer-motion";
 import { AiOutlineMenu } from "react-icons/ai";
-import { FaMoon, FaSun } from "react-icons/fa";
 import Logo from "../assets/Adacon_text.png";
 import Image from "next/image";
 import { Link } from "react-scroll";
@@ -83,7 +82,10 @@ export default function Header() {
 				target="_blank"
 				w="full"
 				variant="ghost"
-				bg="#3bc98d"
+				bg="#01bf71"
+				_hover={{
+					bg: "#3bc98d",
+				}}
 				onClick={mobileNav.onClose}
 			>
 				Buy On Pancake
@@ -213,11 +215,15 @@ export default function Header() {
 									href="https://pancakeswap.finance/"
 									target="_blank"
 									colorScheme="brand"
-									bg="#3bc98d"
+									// bg="#3bc98d"
 									variant="solid"
 									// size="sm"
 									fontSize="medium"
 									color="white"
+									bg="#01bf71"
+									_hover={{
+										bg: "#3bc98d",
+									}}
 								>
 									Buy On Pancake
 								</Button>

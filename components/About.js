@@ -68,10 +68,10 @@ export default function SplitScreen() {
 									bg: "white",
 									color: "#3bc98d",
 								}}
-								href="https://pancakeswap.finance/"
+								href="https://telegram.org/"
 								target="_blank"
 							>
-								Buy Now!
+								Join Telegram
 							</Button>
 							<Metamask />
 						</Stack>

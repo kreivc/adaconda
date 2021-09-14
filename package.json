@@ -9,7 +9,6 @@
     "@chakra-ui/react": "^1.6.7",
     "@emotion/react": "11",
     "@emotion/styled": "11",
-    "@tippyjs/react": "^4.2.5",
     "aos": "^2.3.4",
     "css-loader": "^6.2.0",
     "framer-motion": "4",

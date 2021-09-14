@@ -36,7 +36,7 @@ export default function Hero() {
 					<CopyToClipboard text="Not Release Yet">
 						<button
 							type="button"
-							className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-[#3bc98d] border border-transparent rounded-lg md:w-auto hover:bg-[#3bc98d] focus:outline-none transition duration-150 ease-in-out"
+							className="inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-[#01bf71] border border-transparent rounded-lg md:w-auto hover:bg-[#3bc98d] focus:outline-none transition duration-150 ease-in-out"
 							onClick={() => setCopied(!copied)}
 						>
 							Not Release Yet

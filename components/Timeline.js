@@ -55,7 +55,7 @@ export default function GridListWithHeading() {
 							<VStack align={"start"}>
 								<Text fontWeight={600}>Launch Twitter Page</Text>
 								<Text color={"gray.400"}>
-									Also we release Twitter page for marketing and news update
+									Also, release a Twitter page for marketing and news update
 								</Text>
 							</VStack>
 						</HStack>
@@ -78,7 +78,7 @@ export default function GridListWithHeading() {
 							<VStack align={"start"}>
 								<Text fontWeight={600}>Token Launch</Text>
 								<Text color={"gray.400"}>
-									We Officially lauch Adaconda to public on Pancakeswap
+									Officially lauch Adaconda on Pancakeswap
 								</Text>
 							</VStack>
 						</HStack>
@@ -89,8 +89,7 @@ export default function GridListWithHeading() {
 							<VStack align={"start"}>
 								<Text fontWeight={600}>Listing Platforms</Text>
 								<Text color={"gray.400"}>
-									We release Adaconda officially on coinsniper also coinecko
-									ASAP
+									Listing on Coinsniper, Coingecko and many more
 								</Text>
 							</VStack>
 						</HStack>
@@ -101,7 +100,7 @@ export default function GridListWithHeading() {
 							<VStack align={"start"}>
 								<Text fontWeight={600}>Marketing Collaboration</Text>
 								<Text color={"gray.400"}>
-									This phase we will gather more influencer to promote Adaconda
+									Starting the “Promoting Plan” that we made carefully
 								</Text>
 							</VStack>
 						</HStack>
@@ -124,7 +123,7 @@ export default function GridListWithHeading() {
 							<VStack align={"start"}>
 								<Text fontWeight={600}>To be Announced! </Text>
 								<Text color={"gray.400"}>
-									We will announce the next update on website so stay tuned!
+									We will announce the next update here, so stay tuned!
 								</Text>
 							</VStack>
 						</HStack>
