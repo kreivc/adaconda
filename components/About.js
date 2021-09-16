@@ -30,7 +30,7 @@ export default function SplitScreen() {
 				>
 					<Stack spacing={6} w={"full"} maxW={"lg"}>
 						<Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-							<Text
+							{/* <Text
 								as={"span"}
 								position={"relative"}
 								_after={{
@@ -46,9 +46,9 @@ export default function SplitScreen() {
 							>
 								About
 							</Text>
-							<br />{" "}
+							<br />{" "} */}
 							<Text color="#3bc98d" as={"span"}>
-								Adaconda Projects
+								About Adaconda,
 							</Text>{" "}
 						</Heading>
 						<Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
