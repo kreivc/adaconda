@@ -48,7 +48,7 @@ export default function SplitScreen() {
 							</Text>
 							<br />{" "} */}
 							<Text color="#3bc98d" as={"span"}>
-								About Adaconda,
+								About Adaconda
 							</Text>{" "}
 						</Heading>
 						<Text fontSize={{ base: "md", lg: "lg" }} color={"gray.500"}>
