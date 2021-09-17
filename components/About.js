@@ -68,7 +68,7 @@ export default function SplitScreen() {
 									bg: "white",
 									color: "#3bc98d",
 								}}
-								href="https://telegram.org/"
+								href="https://t.me/Adaconda"
 								target="_blank"
 							>
 								Join Telegram

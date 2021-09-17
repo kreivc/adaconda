@@ -71,7 +71,7 @@ export default function Footer() {
 				</nav>
 				<div className="flex justify-center mt-8 space-x-6">
 					<a
-						href="https://t.me"
+						href="https://t.me/Adaconda"
 						target="_blank"
 						className="text-gray-400 hover:text-white"
 					>
