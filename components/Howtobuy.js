@@ -15,12 +15,12 @@ export default function Howto() {
 						data-aos="fade-up-right"
 					>
 						<h2 className="text-4xl font-extrabold leading-10 tracking-tight text-[#01bf71] sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-							How To Buy
+							How to buy
 						</h2>
 						<p className="my-6 text-lg text-black">
-							Don't forget to connect your wallet to pancake swap, then copy
-							Adaconda address on landing page above then swap! All you need
-							just wait and enjoy cumulative gain + free ADA
+							Don't forget to connect your wallet to Pancakeswap, then copy
+							Adaconda address on the landing page above and swap. Just hold and
+							enjoy a huge cumulative gain + free ADA.
 						</p>
 						<div className="flex space-x-4">
 							<a

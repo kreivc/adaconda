@@ -73,7 +73,7 @@ export default function Header() {
 			</Link>
 			<Link to="howtobuy" smooth={true} duration={500} spy={true} exact="true">
 				<Button w="full" variant="ghost" onClick={mobileNav.onClose}>
-					How To Buy
+					How to buy
 				</Button>
 			</Link>
 			<Button
@@ -203,7 +203,7 @@ export default function Header() {
 										_hover={{ color: cl }}
 										_focus={{ boxShadow: "none" }}
 									>
-										How To Buy
+										How to buy
 									</Button>
 								</Link>
 							</HStack>
