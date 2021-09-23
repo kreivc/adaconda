@@ -100,7 +100,7 @@ export default function SplitWithImage() {
 							<Feature
 								icon={<Icon as={GiPresent} color={"purple.500"} w={5} h={5} />}
 								iconBg={useColorModeValue("purple.100", "purple.900")}
-								text={"8% ADA Rewards"}
+								text={"6% ADA Rewards"}
 							/>
 							<Feature
 								icon={
