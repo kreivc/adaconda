@@ -79,7 +79,7 @@ export default function Footer() {
 						<FaTelegram className="w-6 h-6" />
 					</a>
 					<a
-						href="https://poocoin.app"
+						href="https://poocoin.app/tokens/0x301dfc30734c583d0049b0773e3edce94416690f"
 						target="_blank"
 						className="text-gray-400 hover:text-white"
 					>

@@ -31,7 +31,7 @@ export default function Howto() {
 								Buy Now
 							</a>
 							<a
-								href="https://poocoin.app/"
+								href="https://poocoin.app/tokens/0x301dfc30734c583d0049b0773e3edce94416690f"
 								target="_blank"
 								className="flex items-center justify-center px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-[#01bf71] border border-transparent rounded-md shadow hover:bg-[#3bc98d] focus:outline-none md:py-4 md:text-lg md:px-10"
 							>
