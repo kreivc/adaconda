@@ -7,7 +7,7 @@ export default function Metamask() {
 	return (
 		<>
 			<Button
-				disabled={true}
+				// disabled={true}
 				rounded={"lg"}
 				bg="white"
 				color={"#3bc98d"}
@@ -23,10 +23,10 @@ export default function Metamask() {
 							params: {
 								type: "ERC20",
 								options: {
-									address: "0xDb2DaF120120D60Dc5d08eBb4b06896a238a610a",
-									symbol: "AdaZeus",
+									address: "0x301dfc30734c583d0049b0773e3edce94416690f",
+									symbol: "Adaconda",
 									decimals: 4,
-									image: "https://i.ibb.co/MhqHVLY/Adazeus-logo-wolines.png",
+									image: "https://i.ibb.co/twGcK9L/Anaconda-flipped.png",
 								},
 							},
 							id: Math.round(Math.random() * 100000),

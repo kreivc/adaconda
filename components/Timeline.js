@@ -71,9 +71,9 @@ export default function GridListWithHeading() {
 							</VStack>
 						</HStack>
 
-						<HStack align={"top"} data-aos="zoom-out">
-							<Box color={"white"} px={2} color="white">
-								<Icon as={VscLoading} />
+						<HStack align={"top"} data-aos="zoom-in">
+							<Box color={"green.400"} px={2}>
+								<Icon as={RiCheckFill} />
 							</Box>
 							<VStack align={"start"}>
 								<Text fontWeight={600}>Token Launch</Text>
